@@ -29,7 +29,7 @@ exports.signup = async (req, res) => {
         }
 
         //create entry fo rUser
-        const user = await User.connect({
+        const user = await User.create({
             name,
             email,
             password: hashedPassword,
